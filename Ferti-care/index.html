@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferti-Care | Premium Agricultural Solutions</title>
+    <meta name="description" content="Get high-quality fertilizers, seeds, and farming equipment at competitive prices">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Announcement Bar -->
+    <div class="announcement-bar">
+        <div class="container">
+            <p>🌱 Free shipping on orders over $50 | Special discounts for bulk purchases!</p>
+        </div>
+    </div>
+
+    <!-- Header with Navigation -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <!-- <img src="images/logo.png" alt="Ferti-Care Logo" class="logo-img"> -->
+                        <span class="logo-text">Ferti<span class="logo-highlight">Care</span></span>
+                    </a>
+                </div>
+                
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for products...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                
+                <div class="header-actions">
+                    <a href="#" class="header-icon"><i class="far fa-user"></i></a>
+                    <a href="#" class="header-icon"><i class="far fa-heart"></i></a>
+                    <a href="cart.html" class="header-icon cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="products.html">Shop</a></li>
+                    <li class="dropdown">
+                        <a href="#">Categories <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="products.html?category=fertilizers">Fertilizers</a>
+                            <a href="products.html?category=seeds">Seeds</a>
+                            <a href="products.html?category=tools">Farming Tools</a>
+                            <a href="products.html?category=organic">Organic Products</a>
+                        </div>
+                    </li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="admin/login.html" class="admin-btn">Admin Portal</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-slider">
+            <!-- Slide 1 -->
+            <div class="slide active" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/hero1.jpg');">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1>Premium Agricultural Solutions</h1>
+                        <p>Boost your crop yield with our high-quality products</p>
+                        <div class="hero-btns">
+                            <a href="products.html" class="btn btn-primary">Shop Now</a>
+                            <a href="#features" class="btn btn-outline">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 2 -->
+            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/hero2.jpg');">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1>Organic Farming Solutions</h1>
+                        <p>100% natural products for sustainable agriculture</p>
+                        <div class="hero-btns">
+                            <a href="products.html?category=organic" class="btn btn-primary">Explore Organic</a>
+                            <a href="#testimonials" class="btn btn-outline">Our Promise</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="slider-controls">
+            <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        
+        <div class="slider-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Ferti-Care?</h2>
+                <p>We provide the best solutions for modern farming needs</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Fast Delivery</h3>
+                    <p>Get your products delivered within 2-3 business days</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Quality Products</h3>
+                    <p>Certified and tested agricultural solutions</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tag"></i>
+                    </div>
+                    <h3>Competitive Prices</h3>
+                    <p>Best prices with special farmer discounts</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Expert Support</h3>
+                    <p>24/7 customer support from agriculture experts</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="featured-products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Products</h2>
+                <p>Our most popular agricultural solutions</p>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Products will be loaded via JavaScript -->
+            </div>
+            
+            <div class="section-footer">
+                <a href="products.html" class="btn btn-primary">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Customers Say</h2>
+                <p>Trusted by farmers across the country</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Ferti-Care products increased my crop yield by 30% compared to last season. Highly recommended!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/farmer1.jpg" alt="John D.">
+                        <h4>John D.</h4>
+                        <span>Commercial Farmer</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>"The customer support helped me choose the right products for my soil type. Great service!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/farmer2.jpg" alt="Maria S.">
+                        <h4>Maria S.</h4>
+                        <span>Organic Farmer</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Fast delivery even to my remote farm. The organic fertilizers worked wonders for my vegetables."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/farmer3.jpg" alt="Robert K.">
+                        <h4>Robert K.</h4>
+                        <span>Small Farm Owner</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter for farming tips, special offers, and new products</p>
+                
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <a href="index.html">
+                            <!-- <img src="images/logo-white.png" alt="Ferti-Care Logo" class="logo-img"> -->
+                            <span class="logo-text logo-white">Ferti<span class="logo-highlight">Care</span></span>
+                        </a>
+                    </div>
+                    <p>Providing quality agricultural solutions since 2015. Helping farmers grow better crops with innovative products.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Shop</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="products.html?category=fertilizers">Fertilizers</a></li>
+                        <li><a href="products.html?category=seeds">Seeds</a></li>
+                        <li><a href="products.html?category=tools">Farming Tools</a></li>
+                        <li><a href="products.html?category=organic">Organic Products</a></li>
+                        <li><a href="products.html?category=pesticides">Pesticides</a></li>
+                        <li><a href="products.html?category=irrigation">Irrigation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Farm Road, Agricultural Zone, Country</li>
+                        <li><i class="fas fa-phone"></i> +1 (234) 567-8900</li>
+                        <li><i class="fas fa-envelope"></i> info@ferticare.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 8AM - 6PM</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-amazon-pay"></i>
+                </div>
+                
+                <div class="copyright">
+                    <p>&copy; 2023 Ferti-Care. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

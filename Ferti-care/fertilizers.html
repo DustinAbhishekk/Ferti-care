@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fertilizers | Ferti-Care</title>
+    <meta name="description" content="High-quality fertilizers for all your agricultural needs. NPK, urea, organic and specialty fertilizers available.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/category.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Announcement Bar -->
+    <div class="announcement-bar">
+        <div class="container">
+            <p>🌱 Special offer: Buy 3 fertilizer products, get 10% discount | Free shipping on orders over $50</p>
+        </div>
+    </div>
+
+    <!-- Header with Navigation -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Ferti-Care Logo" class="logo-img">
+                        <span class="logo-text">Ferti<span class="logo-highlight">Care</span></span>
+                    </a>
+                </div>
+                
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for fertilizers...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                
+                <div class="header-actions">
+                    <a href="#" class="header-icon"><i class="far fa-user"></i></a>
+                    <a href="#" class="header-icon"><i class="far fa-heart"></i></a>
+                    <a href="cart.html" class="header-icon cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Shop</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="active">Categories <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="fertilizers.html" class="active">Fertilizers</a>
+                            <a href="seeds.html">Seeds</a>
+                            <a href="tools.html">Farming Tools</a>
+                            <a href="organic.html">Organic Products</a>
+                        </div>
+                    </li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="admin/login.html" class="admin-btn">Admin Portal</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Category Hero Section -->
+    <section class="category-hero fertilizers-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Premium Fertilizers</h1>
+                <p>Boost your crop yield with our high-quality fertilizers tailored for different growth stages</p>
+                <a href="#fertilizer-types" class="btn btn-primary">Explore Types</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Breadcrumb Navigation -->
+    <section class="breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Shop</a></li>
+                <li>Fertilizers</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Fertilizer Types Info Section -->
+    <section class="fertilizer-types" id="fertilizer-types">
+        <div class="container">
+            <div class="section-header">
+                <h2>Fertilizer Types</h2>
+                <p>Choose the right fertilizer for your crops' needs</p>
+            </div>
+            
+            <div class="types-grid">
+                <div class="type-card">
+                    <div class="type-icon">
+                        <img src="images/icons/npk-icon.png" alt="NPK Fertilizer">
+                    </div>
+                    <h3>NPK Fertilizers</h3>
+                    <p>Balanced nutrients (Nitrogen, Phosphorus, Potassium) for overall plant growth and development.</p>
+                    <a href="#npk-products" class="btn btn-outline">View Products</a>
+                </div>
+                
+                <div class="type-card">
+                    <div class="type-icon">
+                        <img src="images/icons/nitrogen-icon.png" alt="Nitrogen Fertilizer">
+                    </div>
+                    <h3>Nitrogen Fertilizers</h3>
+                    <p>Promote vegetative growth and green leaf development. Essential for leafy vegetables and grasses.</p>
+                    <a href="#nitrogen-products" class="btn btn-outline">View Products</a>
+                </div>
+                
+                <div class="type-card">
+                    <div class="type-icon">
+                        <img src="images/icons/phosphate-icon.png" alt="Phosphate Fertilizer">
+                    </div>
+                    <h3>Phosphate Fertilizers</h3>
+                    <p>Support root development, flowering, and fruiting. Crucial for early growth stages.</p>
+                    <a href="#phosphate-products" class="btn btn-outline">View Products</a>
+                </div>
+                
+                <div class="type-card">
+                    <div class="type-icon">
+                        <img src="images/icons/potash-icon.png" alt="Potash Fertilizer">
+                    </div>
+                    <h3>Potash Fertilizers</h3>
+                    <p>Improve fruit quality, disease resistance, and water retention in plants.</p>
+                    <a href="#potash-products" class="btn btn-outline">View Products</a>
+                </div>
+                
+                <div class="type-card">
+                    <div class="type-icon">
+                        <img src="images/icons/organic-icon.png" alt="Organic Fertilizer">
+                    </div>
+                    <h3>Organic Fertilizers</h3>
+                    <p>Natural fertilizers that improve soil structure and provide slow-release nutrients.</p>
+                    <a href="#organic-products" class="btn btn-outline">View Products</a>
+                </div>
+                
+                <div class="type-card">
+                    <div class="type-icon">
+                        <img src="images/icons/specialty-icon.png" alt="Specialty Fertilizer">
+                    </div>
+                    <h3>Specialty Fertilizers</h3>
+                    <p>Custom blends for specific crops, soil conditions, or growth requirements.</p>
+                    <a href="#specialty-products" class="btn btn-outline">View Products</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fertilizer Application Guide -->
+    <section class="application-guide">
+        <div class="container">
+            <div class="guide-content">
+                <div class="guide-text">
+                    <h2>Fertilizer Application Guide</h2>
+                    <p>Learn how to properly apply fertilizers for maximum effectiveness and minimal environmental impact.</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Soil testing before application</li>
+                        <li><i class="fas fa-check-circle"></i> Proper timing for different crops</li>
+                        <li><i class="fas fa-check-circle"></i> Correct application rates</li>
+                        <li><i class="fas fa-check-circle"></i> Safety precautions</li>
+                        <li><i class="fas fa-check-circle"></i> Storage recommendations</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Download Full Guide (PDF)</a>
+                </div>
+                <div class="guide-image">
+                    <img src="images/fertilizer-application.jpg" alt="Fertilizer Application">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Products Section -->
+    <section class="category-products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Fertilizer Products</h2>
+                <p>High-quality formulations for every farming need</p>
+            </div>
+            
+            <!-- Specialized Filters for Fertilizers -->
+            <div class="fertilizer-filters">
+                <div class="filter-group">
+                    <h3 class="filter-title">Fertilizer Type</h3>
+                    <div class="filter-options">
+                        <button class="filter-btn active" data-filter="all">All Types</button>
+                        <button class="filter-btn" data-filter="npk">NPK</button>
+                        <button class="filter-btn" data-filter="nitrogen">Nitrogen</button>
+                        <button class="filter-btn" data-filter="phosphate">Phosphate</button>
+                        <button class="filter-btn" data-filter="potash">Potash</button>
+                        <button class="filter-btn" data-filter="organic">Organic</button>
+                        <button class="filter-btn" data-filter="specialty">Specialty</button>
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <h3 class="filter-title">Form</h3>
+                    <div class="filter-options">
+                        <button class="filter-btn active" data-filter="all">All Forms</button>
+                        <button class="filter-btn" data-filter="granular">Granular</button>
+                        <button class="filter-btn" data-filter="liquid">Liquid</button>
+                        <button class="filter-btn" data-filter="powder">Powder</button>
+                        <button class="filter-btn" data-filter="pellet">Pellets</button>
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <h3 class="filter-title">Crop Type</h3>
+                    <div class="filter-options">
+                        <button class="filter-btn active" data-filter="all">All Crops</button>
+                        <button class="filter-btn" data-filter="cereals">Cereals</button>
+                        <button class="filter-btn" data-filter="vegetables">Vegetables</button>
+                        <button class="filter-btn" data-filter="fruits">Fruits</button>
+                        <button class="filter-btn" data-filter="cash">Cash Crops</button>
+                        <button class="filter-btn" data-filter="lawn">Lawn & Turf</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Products Grid -->
+            <div class="products-grid" id="fertilizer-products">
+                <!-- Products will be loaded via JavaScript -->
+                <div class="product-card npk granular cereals" data-id="1">
+                    <div class="product-badge">Best Seller</div>
+                    <div class="product-image">
+                        <img src="images/products/npk-20-20-20.jpg" alt="NPK 20-20-20 Fertilizer">
+                        <div class="product-actions">
+                            <button class="quick-view"><i class="far fa-eye"></i></button>
+                            <button class="add-to-wishlist"><i class="far fa-heart"></i></button>
+                            <button class="add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">NPK Fertilizer</span>
+                        <h3 class="product-title">NPK 20-20-20 Balanced Fertilizer</h3>
+                        <div class="product-specs">
+                            <span><i class="fas fa-weight-hanging"></i> 50kg bag</span>
+                            <span><i class="fas fa-seedling"></i> All crops</span>
+                        </div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span class="rating-count">(42)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$28.99</span>
+                            <span class="old-price">$32.99</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- More fertilizer products will be added by JavaScript -->
+            </div>
+            
+            <div class="section-footer">
+                <a href="#" class="btn btn-primary">View All Fertilizers</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fertilizer FAQs -->
+    <section class="fertilizer-faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Fertilizer FAQs</h2>
+                <p>Common questions about our fertilizer products</p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How often should I fertilize my crops?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The frequency of fertilization depends on the crop type, growth stage, and soil conditions. Most crops benefit from fertilization every 4-6 weeks during the growing season. Always follow the specific recommendations for each fertilizer product.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What's the difference between organic and synthetic fertilizers?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Organic fertilizers are derived from natural sources (plant or animal matter) and release nutrients slowly as they decompose. Synthetic fertilizers are manufactured and provide nutrients in forms that are immediately available to plants. Organic options improve soil health over time, while synthetics offer precise nutrient control.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I mix different fertilizers together?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Some fertilizers can be safely mixed, but others may react negatively. Always check compatibility before mixing. As a general rule, don't mix fertilizers with pesticides unless the label specifically allows it. When in doubt, apply products separately.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How should I store fertilizers?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Store fertilizers in a cool, dry place away from moisture and direct sunlight. Keep them in their original containers with lids tightly closed. Store granular and liquid fertilizers separately, and keep all fertilizers away from children, pets, and food products.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Get Fertilizer Tips & Offers</h2>
+                <p>Subscribe to our newsletter for seasonal fertilization guides and special discounts</p>
+                
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/logo-white.png" alt="Ferti-Care Logo" class="logo-img">
+                            <span class="logo-text">Ferti<span class="logo-highlight">Care</span></span>
+                        </a>
+                    </div>
+                    <p>Providing quality agricultural solutions since 2015. Helping farmers grow better crops with innovative products.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Shop</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Fertilizer Resources</h3>
+                    <ul>
+                        <li><a href="#">Application Guides</a></li>
+                        <li><a href="#">Soil Testing</a></li>
+                        <li><a href="#">Fertilizer Calculator</a></li>
+                        <li><a href="#">Safety Data Sheets</a></li>
+                        <li><a href="#">Crop-Specific Advice</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Farm Road, Agricultural Zone, Country</li>
+                        <li><i class="fas fa-phone"></i> +1 (234) 567-8900</li>
+                        <li><i class="fas fa-envelope"></i> fertilizers@ferticare.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 8AM - 6PM</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-amazon-pay"></i>
+                </div>
+                
+                <div class="copyright">
+                    <p>&copy; 2023 Ferti-Care. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/fertilizers.js"></script>
+</body>
+</html>
