@@ -328,3 +328,169 @@ function validateEmail(email) {
   const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return re.test(email);
 }
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Mobile Menu Toggle
+  const mobileToggle = document.getElementById("mobile-toggle");
+  const mainNav = document.getElementById("main-nav");
+  const searchButton = document.querySelector(".search-bar button");
+  const dropdownToggles = document.querySelectorAll(".dropdown > a");
+
+  // Toggle mobile menu
+  mobileToggle.addEventListener("click", function () {
+    this.classList.toggle("active");
+    mainNav.classList.toggle("active");
+
+    // Close search bar if open
+    document.querySelector(".search-bar").classList.remove("active");
+  });
+
+  // Toggle dropdowns on mobile
+  dropdownToggles.forEach((toggle) => {
+    toggle.addEventListener("click", function (e) {
+      if (window.innerWidth <= 992) {
+        e.preventDefault();
+        const dropdown = this.parentElement;
+        dropdown.classList.toggle("active");
+
+        // Close other dropdowns
+        dropdownToggles.forEach((otherToggle) => {
+          if (otherToggle !== toggle) {
+            otherToggle.parentElement.classList.remove("active");
+          }
+        });
+      }
+    });
+  });
+
+  // Toggle search on mobile
+  if (searchButton) {
+    searchButton.addEventListener("click", function (e) {
+      if (window.innerWidth <= 992) {
+        e.preventDefault();
+        const searchBar = document.querySelector(".search-bar");
+        searchBar.classList.toggle("active");
+
+        // Close menu if open
+        mobileToggle.classList.remove("active");
+        mainNav.classList.remove("active");
+      }
+    });
+  }
+
+  // Close menus when clicking outside
+  document.addEventListener("click", function (e) {
+    // Mobile menu toggle
+    const isMobileToggle = e.target.closest("#mobile-toggle");
+    // Main navigation
+    const isMainNav = e.target.closest("#main-nav");
+    // Search bar
+    const isSearchBar = e.target.closest(".search-bar");
+
+    if (!isMobileToggle && !isMainNav && !isSearchBar) {
+      mobileToggle.classList.remove("active");
+      mainNav.classList.remove("active");
+      document.querySelector(".search-bar").classList.remove("active");
+    }
+  });
+
+  // Update cart count from localStorage
+  function updateCartCount() {
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const cartCount = document.querySelector(".cart-count");
+    if (cartCount) {
+      cartCount.textContent = cart.reduce(
+        (total, item) => total + (item.quantity || 1),
+        0
+      );
+    }
+  }
+
+  // Initialize cart count
+  updateCartCount();
+
+  // Close dropdowns when clicking on a dropdown item (mobile)
+  document.querySelectorAll(".dropdown-menu a").forEach((item) => {
+    item.addEventListener("click", function () {
+      if (window.innerWidth <= 992) {
+        this.closest(".dropdown").classList.remove("active");
+        mobileToggle.classList.remove("active");
+        mainNav.classList.remove("active");
+      }
+    });
+  });
+
+  // Handle window resize
+  window.addEventListener("resize", function () {
+    if (window.innerWidth > 992) {
+      // Reset mobile states when resizing to desktop
+      mobileToggle.classList.remove("active");
+      mainNav.classList.remove("active");
+      document.querySelector(".search-bar").classList.remove("active");
+      document
+        .querySelectorAll(".dropdown")
+        .forEach((d) => d.classList.remove("active"));
+    }
+  });
+});
+
+// Dynamic Breadcrumb Generator
+document.addEventListener('DOMContentLoaded', function() {
+    const breadcrumbList = document.getElementById('breadcrumb-list');
+    
+    // Only generate if element exists
+    if (breadcrumbList) {
+        // Get current page info
+        const currentPage = document.title.replace('Ferti-Care | ', '');
+        const pathArray = window.location.pathname.split('/').filter(Boolean);
+        
+        // Clear existing breadcrumbs
+        breadcrumbList.innerHTML = '';
+        
+        // Always add Home
+        addBreadcrumbItem('Home', 'index.html');
+        
+        // Generate breadcrumbs based on URL path
+        let accumulatedPath = '';
+        pathArray.forEach((item, index) => {
+            accumulatedPath += '/' + item;
+            const pageName = formatPageName(item);
+            
+            if (index === pathArray.length - 1) {
+                // Current page (last item)
+                addBreadcrumbItem(pageName, null, true);
+            } else {
+                // Intermediate page
+                addBreadcrumbItem(pageName, accumulatedPath);
+            }
+        });
+        
+        // If no path segments, but we have a current page (like "Shop")
+        if (pathArray.length === 0 && currentPage) {
+            addBreadcrumbItem(currentPage, null, true);
+        }
+    }
+    
+    function addBreadcrumbItem(name, link, isCurrent = false) {
+        const li = document.createElement('li');
+        if (isCurrent) {
+            li.className = 'current-page';
+            li.textContent = name;
+        } else {
+            const a = document.createElement('a');
+            a.href = link;
+            a.textContent = name;
+            li.appendChild(a);
+        }
+        breadcrumbList.appendChild(li);
+    }
+    
+    function formatPageName(name) {
+        // Convert URL-friendly names to display names
+        return name
+            .replace('.html', '')
+            .replace(/-/g, ' ')
+            .replace(/\b\w/g, l => l.toUpperCase());
+    }
+});

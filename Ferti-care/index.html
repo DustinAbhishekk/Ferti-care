@@ -20,52 +20,57 @@
     </div>
 
     <!-- Header with Navigation -->
-    <header class="main-header">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <a href="index.html">
-                        <!-- <img src="images/logo.png" alt="Ferti-Care Logo" class="logo-img"> -->
-                        <span class="logo-text">Ferti<span class="logo-highlight">Care</span></span>
-                    </a>
-                </div>
-                
-                <div class="search-bar">
-                    <input type="text" placeholder="Search for products...">
-                    <button><i class="fas fa-search"></i></button>
-                </div>
-                
-                <div class="header-actions">
-                    <a href="#" class="header-icon"><i class="far fa-user"></i></a>
-                    <a href="#" class="header-icon"><i class="far fa-heart"></i></a>
-                    <a href="cart.html" class="header-icon cart-icon">
-                        <i class="fas fa-shopping-cart"></i>
-                        <span class="cart-count">0</span>
-                    </a>
-                </div>
+   <header class="main-header">
+    <div class="container">
+        <div class="header-content">
+            <!-- Mobile Toggle Button -->
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-text">Ferti<span class="logo-highlight">Care</span></span>
+                </a>
             </div>
             
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="products.html">Shop</a></li>
-                    <li class="dropdown">
-                        <a href="#">Categories <i class="fas fa-chevron-down"></i></a>
-                        <div class="dropdown-menu">
-                            <!-- <a href="products.html?category=fertilizers">Fertilizers</a> -->
-                            <a href="fertilizers.html">Fertilizers</a>
-                            <a href="products.html?category=seeds">Seeds</a>
-                            <a href="products.html?category=tools">Farming Tools</a>
-                            <a href="products.html?category=organic">Organic Products</a>
-                        </div>
-                    </li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="admin/login.html" class="admin-btn">Admin Portal</a></li>
-                </ul>
-            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div class="header-actions">
+                <a href="#" class="header-icon"><i class="far fa-user"></i></a>
+                <a href="#" class="header-icon"><i class="far fa-heart"></i></a>
+                <a href="cart.html" class="header-icon cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
         </div>
-    </header>
+        
+        <nav class="main-nav" id="main-nav">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="products.html">Shop</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Categories <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="fertilizers.html">Fertilizers</a>
+                        <a href="products.html?category=seeds">Seeds</a>
+                        <a href="products.html?category=tools">Farming Tools</a>
+                        <a href="products.html?category=organic">Organic Products</a>
+                    </div>
+                </li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="admin/login.html" class="admin-btn">Admin Portal</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
     <!-- Hero Section -->
     <section class="hero">

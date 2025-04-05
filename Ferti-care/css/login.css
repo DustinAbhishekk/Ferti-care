@@ -1,0 +1,266 @@
+/* ===== Base Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: #f5f9f5; /* Light green background */
+}
+
+/* ===== Left Side (Branding) ===== */
+.brand-section {
+    flex: 1;
+    background: linear-gradient(135deg, #2e7d32, #4caf50); /* Green gradient */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.brand-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/agri-background.jpg') center/cover;
+    opacity: 0.1;
+}
+
+.brand-content {
+    position: relative;
+    z-index: 2;
+    max-width: 500px;
+    text-align: center;
+}
+
+.logo {
+    width: 120px;
+    margin-bottom: 2rem;
+}
+
+.brand-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.brand-subtitle {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.brand-features {
+    text-align: left;
+    margin-top: 3rem;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.feature-icon {
+    background: rgba(255, 255, 255, 0.2);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    flex-shrink: 0;
+    color: #c8e6c9; /* Light green icon color */
+}
+
+/* ===== Right Side (Login Form) ===== */
+.login-section {
+    width: 40%;
+    min-width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+    background: white;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.login-header {
+    margin-bottom: 2.5rem;
+}
+
+.login-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #2e7d32; /* Dark green */
+    margin-bottom: 0.5rem;
+}
+
+.login-subtitle {
+    color: #689f38; /* Medium green */
+    font-size: 0.95rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #2e7d32; /* Dark green */
+}
+
+.input-with-icon {
+    position: relative;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px 15px 12px 45px;
+    border: 1px solid #c8e6c9; /* Light green border */
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.2s;
+    background-color: #f5f9f5; /* Very light green background */
+}
+
+.form-input:focus {
+    border-color: #4caf50; /* Bright green */
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2); /* Green shadow */
+    outline: none;
+}
+
+.input-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #689f38; /* Medium green */
+}
+
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #689f38; /* Medium green */
+    cursor: pointer;
+}
+
+.toggle-password:hover {
+    color: #2e7d32; /* Dark green */
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5rem 0;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    color: #2e7d32; /* Dark green */
+}
+
+.forgot-password {
+    color: #689f38; /* Medium green */
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.forgot-password:hover {
+    color: #2e7d32; /* Dark green */
+    text-decoration: underline;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 14px;
+    background: #4caf50; /* Bright green */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+    background: #388e3c; /* Darker green */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(56, 142, 60, 0.3);
+}
+
+.login-footer {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #689f38; /* Medium green */
+}
+
+/* ===== Responsive Styles ===== */
+@media (max-width: 992px) {
+    body {
+        flex-direction: column;
+        overflow: auto;
+    }
+    
+    .brand-section {
+        padding: 2rem 1rem;
+        flex: none;
+        height: auto;
+        background: linear-gradient(to right, #2e7d32, #4caf50);
+    }
+    
+    .login-section {
+        width: 100%;
+        min-width: auto;
+        padding: 2rem 1.5rem;
+        box-shadow: none;
+    }
+    
+    .brand-features {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .login-container {
+        padding: 0;
+    }
+    
+    .form-input {
+        padding: 12px 15px 12px 40px;
+    }
+}
